@@ -28,3 +28,17 @@ The project is built with **Flask** for the backend, includes a simple web-based
 ---
 
 ## 📂 Project Structure
+├── app.py # Main Flask application
+├── store_index.py # Creates Pinecone index from medical PDF
+├── src/
+│ ├── helper.py # Utility functions (load PDF, split text, embeddings)
+│ ├── prompt.py # Prompt template for GPT responses
+├── templates/
+│ └── chat.html # Chatbot frontend
+├── static/
+│ └── style.css # Styling for chatbot UI
+├── Data/
+│ └── Medical_book.pdf # Knowledge base
+├── Dockerfile # Docker container setup
+├── requirements.txt # Project dependencies
+└── README.md # Project documentation
